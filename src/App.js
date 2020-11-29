@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import React from "react";
+import Stars from "./components/Starts";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <div>0 stars:</div>
+            <Stars count={0}/>
+            <div>1 star:</div>
+            <Stars count={1}/>
+            <div>5 stars:</div>
+            <Stars count={5}/>
+            <div>6 stars:</div>
+            <Stars count={6}/>
+        </>
+    );
 }
 
 export default App;
